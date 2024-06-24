@@ -137,6 +137,10 @@ h6 {
     font-size: var(--fs-100);
 }
 
+p {
+    line-height: 1.2rem;
+}
+
 .body-1 {
     font-size: var(--fs-200);
     margin: 2.5rem 0;
@@ -246,7 +250,7 @@ h6 {
 /* hero */
 .hero {
     /* background: linear-gradient rgba(255,255,255,0.6), rgba(243,248,255,0.15); */
-    background: linear-gradient(90deg, rgba(255,255,255,1) 17%, rgba(243,248,255,1) 92%);;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 17%, rgba(243,248,255,1) 92%);
     position: relative;
 }
 
@@ -292,7 +296,7 @@ h6 {
 }
 
 .hero__btn {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .hero__img {
@@ -353,10 +357,10 @@ h6 {
     margin-top: 4rem;
 }
 
-/* cta */
-.cta {
+/* signup */
+.signup {
     background-color: var(--clr-500);
-    background-image: url(/img/cta/Mask-group.png);
+    background-image: url(../img/signup/Mask-group.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -364,14 +368,14 @@ h6 {
     text-align: center;
 }
 
-.cta__text {
+.signup__text {
     max-width: 650px;
     margin: 0 auto;
     margin-bottom: 2rem;
     position: relative;
 }
 
-.cta__bg {
+.signup__bg {
     display: none;
 }
 
@@ -453,6 +457,24 @@ h6 {
     100% {
         transform: translate(0, 0);
     }
+}
+
+/* cta */
+.cta {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 17%, rgba(243,248,255,1) 92%);;
+    text-align: center;
+}
+
+.cta__text {
+    margin-bottom: 2rem;
+}
+
+.cta__content {
+    margin: 2rem 0;
+}
+
+.cta__btn {
+    margin-bottom: 1rem;
 }
 
 
@@ -558,11 +580,11 @@ h6 {
         width: 50%;
     }
 
-    .cta {
+    .signup {
         background-image: none;
     }
 
-    .cta__bg {
+    .signup__bg {
         display: block;
         position: absolute;
         top: 0%;
@@ -581,5 +603,9 @@ h6 {
             transform: translateY(0);
             top: 100%;
         }
+    }
+
+    .cta__content {
+        margin: 0;
     }
 }
