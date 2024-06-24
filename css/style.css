@@ -422,7 +422,7 @@ h6 {
 
 .counter__item {
     background: var(--clr-500);
-    background-image: url(/img/counter/counter_img.png);
+    background-image: url(../img/counter/counter_img.png);
     background-blend-mode: color-burn;
     background-repeat: no-repeat;
     background-position: center;
