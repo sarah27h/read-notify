@@ -181,6 +181,11 @@ p {
     text-align: center;
 }
 
+i {
+    font-size: var(--fs-300);
+    vertical-align: middle;
+}
+
 /* navbar */
 .nav {
     padding: 1.5rem 0;
@@ -370,6 +375,15 @@ p {
 .feats .feat--more {
     align-items: flex-start;
     margin-top: 4rem;
+}
+
+.feat__heading {
+    display: flex;
+    color: var(--clr-500);
+}
+
+.feat__heading i {
+    margin-right: 0.5rem;
 }
 
 /* signup */
