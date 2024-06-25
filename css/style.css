@@ -365,7 +365,7 @@ i {
 
 /* feats */
 .feat + .feat {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
  .feat__text + img{
@@ -379,11 +379,11 @@ i {
 
 .feat__heading {
     display: flex;
-    color: var(--clr-500);
+    justify-content: center;
 }
 
 .feat__heading i {
-    margin-right: 0.5rem;
+    display: none;
 }
 
 /* signup */
@@ -614,6 +614,12 @@ i {
 
     .feat img {
         width: 50%;
+    }
+
+    .feat__heading i {
+        color: var(--clr-500);
+        margin-right: 0.5rem;
+        display: inline-block;
     }
 
     .signup {
