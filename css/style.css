@@ -5,8 +5,8 @@
 }
 
 :root {
-    --ff-body: "Josefin Sans", sans-serif;
-    --ff-heading: "Josefin Sans", sans-serif;
+    --ff-body: "Maven Pro", sans-serif;
+    --ff-heading: "Maven Pro", sans-serif;
     --clr-900: #0b0c0d;
     --clr-700: #383340;
     --clr-600: #212A7A;
@@ -74,6 +74,10 @@ body {
     border-bottom: 5px solid var(--clr-600);
 }
 
+.btn + .btn {
+    margin-top: 1rem;
+}
+
 img {
     max-width: 100%;
 }
@@ -91,19 +95,19 @@ img {
     width: 100%;
 }
 
+.col-15 {
+    width: 50%;
+}
+
 .align-self-end {
     align-self: flex-end;
 }
 
-.col-2 + .col-2 {
-    margin-top: 1rem;
-}
-
-.col-3 + .col-3 {
-    margin-top: 1rem;
-}
-
-.col-5 + .col-5 {
+.col-15 + .col-15,
+.col-2 + .col-2,
+.col-3 + .col-3,
+.col-5 + .col-5
+ {
     margin-top: 1rem;
 }
 
@@ -158,6 +162,10 @@ p {
 
 .body-2 {
     font-size: var(--fs-100);
+}
+
+.label {
+   font-size: 0.75rem;
 }
 
 .accent-text {
@@ -313,10 +321,6 @@ i {
 .hero__text {
     color: var(--clr-700);
     margin-bottom: 2.5rem;
-}
-
-.hero__btn {
-    margin-bottom: 1rem;
 }
 
 .hero__img {
@@ -513,6 +517,60 @@ i {
     margin-bottom: 1rem;
 }
 
+/* footer */
+.footer {
+    background-color: #ECEBEC;
+    background-image: url(../img/footer/footer__img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    width: 60%;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.footer__text {
+    margin-bottom: 1rem;
+}
+
+.footer__heading {
+    margin-bottom: 1.5rem;
+}
+
+.footer__nav + .footer__nav {
+    margin-top: 1rem;
+}
+
+.footer__bottom {
+    font-size: 0.75rem;
+    width: 100%;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #cfcfcf;
+}
+
+.footer__links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__navLink + .footer__navLink {
+    margin-left: 0.5rem;
+}
+
+.footer__copyright {
+    margin-bottom: 2rem;
+}
 
 /* media queries */
 @media (min-width: 900px) {
@@ -540,8 +598,13 @@ i {
         width: 24%;
     }
 
+    .col-15 {
+        width: 15%;
+    }
+
     .col-5 + .col-5,
-    .col-2 + .col-2 {
+    .col-2 + .col-2,
+    .col-15 + .col-15 {
         margin-top: 0;
     }
 
