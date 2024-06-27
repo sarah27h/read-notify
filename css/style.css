@@ -80,6 +80,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -368,8 +369,13 @@ i {
 
 
 /* feats */
+
 .feat + .feat {
     margin-top: 3rem;
+}
+
+.feat__img {
+    width: 50%;
 }
 
  .feat__text + img{
@@ -675,9 +681,7 @@ i {
         order: 2;
     }
 
-    .feat img {
-        width: 50%;
-    }
+    
 
     .feat__heading i {
         color: var(--clr-500);
