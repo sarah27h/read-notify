@@ -68,7 +68,6 @@ body {
 }
 
 .btn:hover {
-    background: var(--clr-accent);
     border: 1px solid var(--clr-600);
     border-bottom: 5px solid var(--clr-600);
 }
@@ -397,12 +396,12 @@ i {
 
 /* signup */
 .signup {
-    background-color: var(--clr-500);
+    background-color: #eee;
     background-image: url(../img/signup/Mask-group.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: #fff;
+    color: #333;
     text-align: center;
 }
 
