@@ -10,9 +10,9 @@
     --clr-900: #0b0c0d;
     --clr-700: #383340;
     --clr-600: #212A7A;
-    --clr-500: #3949D5;
+    --clr-500: #4188F6;
     --clr-gradient: linear-gradient(90deg, rgba(102,113,211,1) 0%, rgba(57,73,213,1) 100%);
-    --clr-accent: #53DDC4;
+    --clr-accent: #00AF46;
     --fs-600: 4rem;
     --fs-500: 2.25rem;
     --fs-400: 1.9rem;
@@ -32,7 +32,7 @@ body {
 }
 
 .btn {
-    background: var(--clr-gradient);
+    background: var(--clr-500);
     color: #fff;
     border-radius: 1rem;
     font-size: var(--fs-300);
@@ -57,7 +57,7 @@ body {
 
 .btn--accent {
     background: var(--clr-accent);
-    color: var(--clr-600);
+    color: #fff;
     padding: 1rem 2rem;
 }
 
@@ -69,7 +69,6 @@ body {
 
 .btn:hover {
     background: var(--clr-accent);
-    color: var(--clr-600);
     border: 1px solid var(--clr-600);
     border-bottom: 5px solid var(--clr-600);
 }
